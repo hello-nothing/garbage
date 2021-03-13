@@ -1,0 +1,25 @@
+<!--pages/type-introduce/zhuangxiu/zhuangxiu.wxml-->
+<view class="image-content">
+  装修垃圾
+</view>
+<view class="title-intro">
+  <view class="intro-title">
+    <text class="title-before"></text>
+    <text class="title-text">投放要求</text>
+  </view>
+  <view class="require" wx:for="{{requireList}}" wx:key="index">
+    <text class="iconfont iconnotice icon-style"></text>
+    <view class="tip-text">{{item.tip}}</view>
+  </view>
+</view>
+<view class="title-intro">
+  <view class="intro-title">
+    <text class="title-before"></text>
+    <text class="title-text">常见装修垃圾</text>
+  </view>
+  <view class="garbage-container">
+    <!-- <view class="gar-title">其他</view> -->
+      <text wx:for="{{lastList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+</view>
+

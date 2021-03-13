@@ -1,0 +1,28 @@
+<!--pages/type-introduce/dajian/dajian.wxml-->
+<view class="image-content">
+  大件垃圾
+</view>
+<view class="title-intro">
+  <text class="title">大件垃圾</text>指体积较大、整体性强，需要拆分在处理的废弃物品。
+</view>
+<view class="title-intro">
+  <view class="intro-title">
+    <text class="title-before"></text>
+    <text class="title-text">投放要求</text>
+  </view>
+  <view class="require" wx:for="{{requireList}}" wx:key="index">
+    <text class="iconfont iconnotice icon-style"></text>
+    <view class="tip-text">{{item.tip}}</view>
+  </view>
+</view>
+<view class="title-intro">
+  <view class="intro-title">
+    <text class="title-before"></text>
+    <text class="title-text">常见大件垃圾</text>
+  </view>
+  <view class="garbage-container">
+    <!-- <view class="gar-title">其他</view> -->
+      <text wx:for="{{lastList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+</view>
+

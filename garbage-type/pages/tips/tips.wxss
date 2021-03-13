@@ -1,0 +1,56 @@
+/* pages/tips/tips.wxss */
+
+.container {
+  padding: 0 10px;
+}
+
+.img-content {
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tip-module {
+  width: calc(100% - 20px);
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.tip-list {
+  padding-bottom: 4px;
+}
+
+.icon-size {
+  font-size: 14px;
+  color: #e0861a;
+}
+
+.tip-text {
+  padding-left: 4px;
+  font-size: 14px;
+  color: #666;
+}
+
+.red-text {
+  font-size: 14px;
+  color: #ef4136;
+}
+
+.tip-title {
+  display: flex;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #ef4136;
+}

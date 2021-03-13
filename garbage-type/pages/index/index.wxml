@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="top-tips">配合垃圾分类，争做文明市民</view>
+<navigator url="../search/search" class="search">
+  <view class="search-content">
+    <text class="iconfont iconsearch1 icon-size"></text>
+    <text class="search-text">日常生活垃圾分类查询</text>
+  </view>
+</navigator>
+<view class="type-content">
+  <navigator url="../type-introduce/use-laji/use-laji" class="four-type">
+    <image class="type-image" src="/static/image/one.jpg"></image>
+  </navigator>
+  <navigator url="../type-introduce/harm-laji/harm-laji" class="four-type">
+    <image class="type-image" src="/static/image/two.jpg"></image>
+  </navigator>
+</view>
+<view class="type-content">
+  <navigator url="../type-introduce/shi-laji/shi-laji" class="four-type">
+    <image class="type-image" src="/static/image/three.jpg"></image>
+  </navigator>
+  <navigator url="../type-introduce/gan-laji/gan-laji" class="four-type">
+    <image class="type-image" src="/static/image/four.png"></image>
+  </navigator>
+</view>
+<view class="report">
+  <text class="iconfont iconnotice icon-style"></text>
+  <text class="tip-text">友情提醒</text>
+</view>
+<view class="report">
+  本系统仅供参考，具体分类请以所属地区专业管理部门为准，如果发现不当之处，请留言反馈。
+</view>

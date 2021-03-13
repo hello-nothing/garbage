@@ -1,0 +1,47 @@
+<!--pages/type-introduce/shi-laji/shi-laji.wxml-->
+<view class="image-content">
+  <image class="image" src="/static/image/three.jpg"></image>
+</view>
+<view class="title-intro">
+  <text class="title">湿垃圾</text>指家庭、餐饮、机团单位食堂、集贸市场等产生的易腐性餐饮垃圾、厨余垃圾、废弃食材、废弃食物、废弃食用油脂等以及家庭产生的木竹、树枝、花草、落叶等。
+</view>
+<view class="title-intro">
+  <view class="intro-title">
+    <text class="title-before"></text>
+    <text class="title-text">投放要求</text>
+  </view>
+  <view class="require" wx:for="{{requireList}}" wx:key="index">
+    <text class="iconfont iconnotice icon-style"></text>
+    <view class="tip-text">{{item.tip}}</view>
+  </view>
+</view>
+<view class="title-intro">
+  <view class="intro-title">
+    <text class="title-before"></text>
+    <text class="title-text">常见湿垃圾</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">食材废料</view>
+      <text wx:for="{{oneList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">剩菜剩饭</view>
+      <text wx:for="{{twoList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">过期食品</view>
+      <text wx:for="{{threeList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">瓜皮干核</view>
+      <text wx:for="{{fourList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">花卉植物</view>
+      <text wx:for="{{fiveList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">其他</view>
+      <text wx:for="{{lastList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+</view>

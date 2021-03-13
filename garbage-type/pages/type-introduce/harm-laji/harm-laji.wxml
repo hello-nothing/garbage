@@ -1,0 +1,55 @@
+<!--pages/type-introduce/harm-laji/harm-laji.wxml-->
+<view class="image-content">
+  <image class="image" src="/static/image/two.jpg"></image>
+</view>
+<view class="title-intro">
+  <text class="title">有害垃圾</text>指有害物质，需要特殊安全处理的生活垃圾，包括对人体健康或自然环境造成直接或潜在危害的灯管、家用化学品和电池等。
+</view>
+<view class="title-intro">
+  <view class="intro-title">
+    <text class="title-before"></text>
+    <text class="title-text">投放要求</text>
+  </view>
+  <view class="require" wx:for="{{requireList}}" wx:key="index">
+    <text class="iconfont iconnotice icon-style"></text>
+    <view class="tip-text">{{item.tip}}</view>
+  </view>
+</view>
+<view class="title-intro">
+  <view class="intro-title">
+    <text class="title-before"></text>
+    <text class="title-text">常见有害垃圾</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">废镍镉电池和废氧化汞电池</view>
+      <text wx:for="{{oneList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">废荧光灯管</view>
+      <text wx:for="{{twoList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">废药品及包装物</view>
+      <text wx:for="{{threeList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">废油漆和溶剂及其包装物</view>
+      <text wx:for="{{fourList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">废矿物油及其包装物</view>
+      <text wx:for="{{fiveList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">废含汞温度计、废含汞血压计</view>
+      <text wx:for="{{sixList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+   <view class="garbage-container">
+    <view class="gar-title">废杀虫剂及其包装</view>
+      <text wx:for="{{sevenList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+   <view class="garbage-container">
+    <view class="gar-title">废胶片及废相纸</view>
+      <text wx:for="{{lastList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+</view>

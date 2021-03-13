@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/book/book",
+    "pages/test/test",
+    "pages/type-introduce/shi-laji/shi-laji",
+    "pages/type-introduce/harm-laji/harm-laji",
+    "pages/type-introduce/use-laji/use-laji",
+    "pages/tips/tips",
+    "pages/search/search",
+    "pages/type-introduce/gan-laji/gan-laji",
+    "pages/type-introduce/dajian/dajian",
+    "pages/type-introduce/zhuangxiu/zhuangxiu"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#7fb80e",
+    "navigationBarTitleText": "垃圾分类",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#7fb80e",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "查询",
+        "iconPath": "static/tabbar/search.png",
+        "selectedIconPath": "static/tabbar/search-active.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "查询",
+        "iconPath": "static/tabbar/book.png",
+        "selectedIconPath": "static/tabbar/book-active.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测一测",
+        "iconPath": "static/tabbar/test.png",
+        "selectedIconPath": "static/tabbar/test-active.png"
+      },
+      {
+        "pagePath": "pages/tips/tips",
+        "text": "小贴士",
+        "iconPath": "static/tabbar/tip.png",
+        "selectedIconPath": "static/tabbar/tip-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

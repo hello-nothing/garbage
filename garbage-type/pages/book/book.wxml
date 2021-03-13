@@ -1,0 +1,26 @@
+<!--pages/book/book.wxml-->
+<view class="nav_title">
+  <view class="nav_tab">
+    <view wx:for="{{list}}" class="{{selected==index?'active':'show'}} show" data-index='{{index}}' bindtap="selected">{{item}}
+    </view>
+  </view>
+  <!-- tab框显示内容 -->
+  <view class="tab-content" wx:if="{{selected == 0}}">
+    <navigator url="../type-introduce/use-laji/use-laji" class="tab-list" wx:for="{{onelist}}" wx:key="">{{item.list}}</navigator>
+  </view>
+  <view class="tab-content" wx:if="{{selected == 1}}">
+    <navigator url="../type-introduce/harm-laji/harm-laji" class="tab-list" wx:for="{{twolist}}" wx:key="index">{{item.list}}</navigator>
+  </view>
+  <view class="tab-content" wx:if="{{selected == 2}}">
+    <navigator url="../type-introduce/shi-laji/shi-laji" class="tab-list" wx:for="{{threelist}}" wx:key="index">{{item.list}}</navigator>
+  </view>
+  <view class="tab-content" wx:if="{{selected == 3}}">
+    <navigator url="../type-introduce/gan-laji/gan-laji" class="tab-list" wx:for="{{fourlist}}" wx:key="index">{{item.list}}</navigator>
+  </view>
+  <view class="tab-content" wx:if="{{selected == 4}}">
+    <navigator url="../type-introduce/zhuangxiu/zhuangxiu" class="tab-list" wx:for="{{fivelist}}" wx:key="index">{{item.list}}</navigator>
+  </view>
+  <view class="tab-content" wx:if="{{selected == 5}}">
+    <navigator url="../type-introduce/dajian/dajian" class="tab-list" wx:for="{{sixlist}}" wx:key="index">{{item.list}}</navigator>
+  </view>
+</view>

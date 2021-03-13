@@ -1,0 +1,15 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+  <view class="search-content">
+    <text class="iconfont iconsearch1 icon-size"></text>
+    <input bindinput='getInputValue' class="search-text" placeholder="输入您要搜索的生活垃圾" confirm-type="search"></input>
+    <view class="button">搜索</view>
+  </view>
+  <view class="result-content" wx:if="{{result}}">
+    <navigator class="result-list" wx:for="{{resultList}}" wx:key="index" url="{{item.url}}">
+      <view class="title">{{item.title}}</view>
+      <view class="type">{{item.type}}</view>
+      <text class="iconfont iconarrow2 link-incon"></text>
+    </navigator>
+  </view>
+</view>

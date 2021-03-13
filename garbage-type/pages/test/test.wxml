@@ -1,0 +1,22 @@
+<!--pages/test/test.wxml-->
+<view class="top-tips">垃圾分类知识测验</view>
+<view class="numer">{{num}}/5</view>
+<view class="test-content" wx:if="{{testResult}}">
+  <view class="test-title">{{name}}</view>
+  <view class="select-list" bindtap="clickButton">可回收物</view>
+  <view class="select-list" bindtap="clickButton">有害垃圾</view>
+  <view class="select-list" bindtap="clickButton">湿垃圾</view>
+  <view class="select-list" bindtap="clickButton">干垃圾</view>
+</view>
+<view class="test-content" wx:if="{{!testResult}}">
+  <view class="test-title">{{grade}}分</view>
+  <view class="result-text">
+    <view class="yes-text">正确答案</view>
+    <view class="no-text">您的答案</view>
+  </view>
+  <view class="res-list" wx:for="{{resultArray}}" wx:key="index">
+    <view class="res-name">{{item.name}}{{item.type}}</view>
+    <view class="yes-name">{{item.answer}}</view>
+  </view>
+  <view class="button" bindtap="clickAgain">再来一局</view>
+</view>

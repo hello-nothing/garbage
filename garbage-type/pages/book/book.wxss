@@ -1,0 +1,47 @@
+/* pages/book/book.wxss */
+page{
+  background-color: #fedcbd;
+}
+
+/*tab框切换*/
+
+.nav_title {
+  position: relative;
+  padding-top: 10px;
+}
+
+.nav_tab {
+  position: fixed;
+  width: 30%;
+  height: 100%;
+}
+
+.show {
+  padding: 16px 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #666;
+  font-size: 28rpx;
+  border-left: 2px solid #7fb80e;
+  background-color: #f2eada;
+}
+
+.active {
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #7fb80e;
+}
+.tab-content {
+  width: 65%;
+  padding-left: 110px;
+  height: 100%;
+}
+.tab-list {
+  padding: 13px 4px;
+  margin-bottom: 10px;
+  margin-right: 4px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+}

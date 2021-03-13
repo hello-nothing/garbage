@@ -1,0 +1,74 @@
+/* pages/test/test.wxss */
+
+.top-tips {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.numer {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  margin-bottom: 10px;
+  text-align: left;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+.test-content {
+  padding: 20px 10px;
+  color: #666;
+  text-align: center;
+  box-shadow: 0 2px 5px px rgba(0, 0, 0, 0.1);
+}
+.test-title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+}
+.select-list {
+  width: 250px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 15px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #d9d6c3;
+  border-radius: 10px;
+}
+.result-text {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.yes-text {
+  color: #7fb80e;
+}
+.no-text {
+  color: #ef4136;
+}
+.res-list {
+  display: flex;
+  margin-bottom: 12px;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #333;
+}
+.res-name {
+  width: 230px;
+  text-align: left;
+}
+.button {
+  width: 230px;
+  margin: auto;
+  height: 40px;
+  margin-top: 30px;
+  line-height: 40px;
+  background-color: #7fb80e;
+  border-radius: 10px;
+}

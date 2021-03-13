@@ -1,0 +1,92 @@
+/* pages/type-introduce/shi-laji/shi-laji.wxss */
+page {
+  color: #77787b;
+  font-size: 14px;
+}
+
+.image-content {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.title-intro {
+  padding: 0 20px 10px;
+}
+
+.title {
+  color: #f15a22;
+  font-size: 16px;
+}
+
+.intro-title {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.title-before {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background-color: #7fb80e;
+  content: '';
+}
+
+.title-text {
+  padding-left: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.require {
+  display: flex;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #74787c;
+}
+
+.require:last-child {
+  padding-bottom: 0;
+}
+
+.icon-style {
+  width: 20px;
+  margin-top: 2px;
+  color: #f15a22;
+}
+
+.tip-text {
+  padding-left: 10px;
+}
+
+.garbage-container {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.gar-title {
+  padding-bottom: 6px;
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.gar-text {
+  display: inline-block;
+  padding: 2px 4px;
+  margin-left: 6px;
+  margin-bottom: 4px;
+  border: 1px solid #7fb80e;
+  border-radius: 4px;
+}

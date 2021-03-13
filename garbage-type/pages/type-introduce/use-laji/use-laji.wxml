@@ -1,0 +1,47 @@
+<!--pages/type-introduce/use-laji/use-laji.wxml-->
+<view class="image-content">
+  <image class="image" src="/static/image/one.jpg"></image>
+</view>
+<view class="title-intro">
+  <text class="title">可回收物</text> 指适宜回收和资源利用的垃圾，包括纸类、塑料、玻璃、织物、橡胶、家具、家用电器和电子产品及其他大件垃圾等。
+</view>
+<view class="title-intro">
+  <view class="intro-title">
+    <text class="title-before"></text>
+    <text class="title-text">投放要求</text>
+  </view>
+  <view class="require" wx:for="{{requireList}}" wx:key="index">
+    <text class="iconfont iconnotice icon-style"></text>
+    <view class="tip-text">{{item.tip}}</view>
+  </view>
+</view>
+<view class="title-intro">
+  <view class="intro-title">
+    <text class="title-before"></text>
+    <text class="title-text">常见可回收物</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">废纸张</view>
+      <text wx:for="{{oneList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">废塑料</view>
+      <text wx:for="{{twoList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">废玻璃制品</view>
+      <text wx:for="{{threeList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">废金属</view>
+      <text wx:for="{{fourList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">废织物</view>
+      <text wx:for="{{fiveList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+  <view class="garbage-container">
+    <view class="gar-title">其他</view>
+      <text wx:for="{{lastList}}" wx:key="index" class="gar-text">{{item.list}}</text>
+  </view>
+</view>

@@ -1,0 +1,88 @@
+<!--pages/tips/tips.wxml-->
+<view class="img-content">
+  <image class="image" src="/static/image/img.png"></image>
+</view>
+<view class="container">
+  <view class="tip-module">
+    <view class="tip-list">
+      <text class="iconfont iconfaxianzhinanzhen icon-size"></text>
+      <text class="tip-text">干垃圾：有些城市划分为</text>
+      <text class="red-text">其他垃圾</text>
+    </view>
+    <view class="tip-list">
+      <text class="iconfont iconfaxianzhinanzhen icon-size"></text>
+      <text class="tip-text">湿垃圾：又名</text>
+      <text class="red-text">厨余垃圾、易腐垃圾、餐厨垃圾</text>
+    </view>
+  </view>
+  <view class="tip-module">
+    <view class="tip-title">
+      <text class="iconfont iconnotice icon-style"></text>
+      <view class="tip-text">垃圾分类简易口诀</view>
+    </view>
+    <view class="tip-list" wx:for="{{mainList}}" wx:key="index">
+      <text class="iconfont iconfaxianzhinanzhen icon-size"></text>
+      <text class="tip-text">{{item.list}}</text>
+    </view>
+  </view>
+  <view class="tip-module">
+    <view class="tip-title">
+      <text class="iconfont iconnotice icon-style"></text>
+      <view class="tip-text">装修垃圾</view>
+    </view>
+    <view class="tip-list" wx:for="{{zhuangList}}" wx:key="index">
+      <text class="iconfont iconfaxianzhinanzhen icon-size"></text>
+      <text class="tip-text">{{item.list}}</text>
+    </view>
+  </view>
+  <view class="tip-module">
+    <view class="tip-title">
+      <text class="iconfont iconnotice icon-style"></text>
+      <view class="tip-text">大件垃圾</view>
+    </view>
+    <view class="tip-list" wx:for="{{bigList}}" wx:key="index">
+      <text class="iconfont iconfaxianzhinanzhen icon-size"></text>
+      <text class="tip-text">{{item.list}}</text>
+    </view>
+  </view>
+  <view class="tip-module">
+    <view class="tip-title">
+      <text class="iconfont iconnotice icon-style"></text>
+      <view class="tip-text">请注意</view>
+    </view>
+    <view class="tip-list" wx:for="{{tipList}}" wx:key="index">
+      <text class="iconfont iconfaxianzhinanzhen icon-size"></text>
+      <text class="tip-text">{{item.list}}</text>
+    </view>
+  </view>
+  <view class="tip-module">
+    <view class="tip-title">
+      <text class="iconfont iconnotice icon-style"></text>
+      <view class="tip-text">下面都不属于日常生活垃圾</view>
+    </view>
+    <view class="tip-list" wx:for="{{noList}}" wx:key="index">
+      <text class="iconfont iconfaxianzhinanzhen icon-size"></text>
+      <text class="tip-text">{{item.list}}</text>
+    </view>
+  </view>
+  <view class="tip-module">
+    <view class="tip-title">
+      <text class="iconfont iconnotice icon-style"></text>
+      <view class="tip-text">宠物粪便该如何处理</view>
+    </view>
+    <view class="tip-list" wx:for="{{zooList}}" wx:key="index">
+      <text class="iconfont iconfaxianzhinanzhen icon-size"></text>
+      <text class="tip-text">{{item.list}}</text>
+    </view>
+  </view>
+  <view class="tip-module">
+    <view class="tip-title">
+      <text class="iconfont iconnotice icon-style"></text>
+      <view class="tip-text">相关咨询</view>
+    </view>
+    <view class="tip-list" wx:for="{{newList}}" wx:key="index">
+      <text class="iconfont iconfaxianzhinanzhen icon-size"></text>
+      <text class="tip-text">{{item.list}}</text>
+    </view>
+  </view>
+</view>
